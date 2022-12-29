@@ -16,7 +16,8 @@ public class Funciones {
 								"De peso a Dolar",
 								"De peso a Euro",
 							},
-				"Seleccion")).toString();
+				"Seleccion")
+			).toString();
 				
 		switch (opciones) {
 		case "De peso a Dolar": {
@@ -30,6 +31,31 @@ public class Funciones {
 	}
 	
 	}
-	
+
+
+	public void convertirTemperatura(double valor){
+		String opciones = (JOptionPane.showInputDialog(null,
+				"Elija la moneda a convertir",
+				"Menu",
+				JOptionPane.QUESTION_MESSAGE,
+				null,
+				new Object[] {
+						"De grados a celsius",
+						"De peso a fahrenheit",
+				},
+				"Seleccion")
+		).toString();
+
+		switch (opciones) {
+			case "De celsius a fahrenheit": {
+
+				break;
+			}
+			case "De fahrenheit a celsius ":{
+
+				break;
+			}
+		}
+	}
 
 }
