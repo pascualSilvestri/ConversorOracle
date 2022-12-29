@@ -29,7 +29,8 @@ public class Principal {
 			}
 			case "Conversos de temperatura":{
 				String input = JOptionPane.showInputDialog("Ingrese un valor a convertir");
-
+				double valor = Double.parseDouble(input);
+				monedas.convertirTemperatura(valor);
 			}
 		}
 		

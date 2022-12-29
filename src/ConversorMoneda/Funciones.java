@@ -40,19 +40,19 @@ public class Funciones {
 				JOptionPane.QUESTION_MESSAGE,
 				null,
 				new Object[] {
-						"De grados a celsius",
-						"De peso a fahrenheit",
+						"De celsius a fahrenheit",
+						"De fahrenheit a celsius",
 				},
 				"Seleccion")
 		).toString();
 
 		switch (opciones) {
 			case "De celsius a fahrenheit": {
-
+				monedas.convertirCelsiusAfahrenheit(valor);
 				break;
 			}
-			case "De fahrenheit a celsius ":{
-
+			case "De fahrenheit a celsius":{
+				monedas.convertirfahrenheitACelsius(valor);
 				break;
 			}
 		}
