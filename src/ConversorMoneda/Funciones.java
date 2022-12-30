@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class Funciones {
 	
 	ConvertirMoneda monedas = new ConvertirMoneda();
+	ConvertirTemperatura temperatura = new ConvertirTemperatura();
 	
 	public void convertirMonedas(double valor) {
 		String opciones = (JOptionPane.showInputDialog(null,
@@ -48,11 +49,11 @@ public class Funciones {
 
 		switch (opciones) {
 			case "De celsius a fahrenheit": {
-				monedas.convertirCelsiusAfahrenheit(valor);
+				temperatura.convertirCelsiusAfahrenheit(valor);
 				break;
 			}
 			case "De fahrenheit a celsius":{
-				monedas.convertirfahrenheitACelsius(valor);
+				temperatura.convertirfahrenheitACelsius(valor);
 				break;
 			}
 		}
